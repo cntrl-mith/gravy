@@ -1,0 +1,9 @@
+views:
+  - type: table
+    name: View
+    filters:
+      and:
+        - file.hasTag("Courses")
+    order:
+      - file.name
+      - aliases

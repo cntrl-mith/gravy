@@ -1,0 +1,8 @@
+views:
+  - type: table
+    name: View
+    filters:
+      and:
+        - draft == true
+        - '!file.tags.containsAny("#general")'
+        - '!file.path.contains("templates")'
